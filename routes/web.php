@@ -21,3 +21,10 @@ Route::get('/nucleus-erp-features', function ()
 {
     return view('features');
 });
+
+Route::get('/nucleus-erp-docs', function ()
+{
+    return view('docs');
+});
+
+
