@@ -27,4 +27,28 @@ Route::get('/nucleus-erp-docs', function ()
     return view('docs');
 });
 
+Route::get('/nucleus-erp-downloads-docs', function ()
+{
+    return view('downloads-docs');
+});
+
+Route::get('/nucleus-erp-installation-docs', function ()
+{
+    return view('installation-docs');
+});
+
+Route::get('/nucleus-erp-dashboard-docs', function ()
+{
+    return view('dashbaord-docs');
+});
+
+Route::get('/nucleus-erp-apps-docs', function ()
+{
+    return view('apps-docs');
+});
+
+Route::get('/nucleus-erp-user-docs', function ()
+{
+    return view('user-docs');
+});
 
