@@ -29,11 +29,11 @@
               <div class="card-body">
                 <ul>
                   <li class="dropdown-header">Documentation</li>
-                  <li class="dropdown-item"><a href="{{ url('/nucleus-erp-docs') }}">Nucleus ERP Docs</a></li>
-                  
+                  <li class="dropdown-item">
+                    <a href="{{ url('/nucleus-erp-docs') }}">Nucleus ERP Docs</a>
+                    </li>
                   <li class="dropdown-header">FAQs</li>
                   <li class="dropdown-item"><a href="{{ url('/nucleus-erp-docs') }}">Nucleus ERP fAQs</a></li>
-                 
                 </ul>
               </div>
             </div>
