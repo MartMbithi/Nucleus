@@ -208,32 +208,32 @@
     <section class="container pt-5 pb-4 mb-3">
       <h2 class="h4 block-title mb-4 text-center">Nucleus ERP Documentation</h2>
       <div class="row pt-2">
-        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="nucleus-erp-requirements.php"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/02.png" style="width: 80px;" alt="Managing Account">
+        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="{{ url('nucleus-erp-requirements') }}"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/02.png" style="width: 80px;" alt="Managing Account">
             <div class="card-body text-center">
               <h3 class="card-title">Requirements</h3>
               <p class="card-text text-sm">When selecting a hosting company, you should check if the following requirements are provided:</p><span class="text-sm text-uppercase font-weight-bold">View Requirements&nbsp;<i class="fe-icon-arrow-right"></i></span>
             </div></a></div>
-        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="nucleus-erp-downloads-docs.php"><img class="d-block mx-auto mt-4"   src="img/pages/help-icons/01.png" style="width: 80px;" alt="Working with Dashboard">
+        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="{{ url('/nucleus-erp-downloads-docs') }}"><img class="d-block mx-auto mt-4"   src="img/pages/help-icons/01.png" style="width: 80px;" alt="Working with Dashboard">
             <div class="card-body text-center">
               <h3 class="card-title">Downloading</h3>
               <p class="card-text text-sm">Download the software and install on your own host/server for free, no restrictions.</p><span class="text-sm text-uppercase font-weight-bold">View Downloads&nbsp;<i class="fe-icon-arrow-right"></i></span>
             </div></a></div>
-        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="nucleus-erp-installation-docs.php"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/03.png" style="width: 80px;" alt="Payment Methods">
+        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="{{ url('/nucleus-erp-installation-docs') }}"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/03.png" style="width: 80px;" alt="Payment Methods">
             <div class="card-body text-center">
               <h3 class="card-title">Installation</h3>
               <p class="card-text text-sm">This guide will show you how to install NucleusERP in your local or remote server just in a couple of minutes.</p><span class="text-sm text-uppercase font-weight-bold">View Topic&nbsp;<i class="fe-icon-arrow-right"></i></span>
             </div></a></div>
-        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="nucleus-erp-dashboard-docs.php"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/04.png" style="width: 80px;" alt="Delivery Information">
+        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="{{ url('/nucleus-erp-dashboard-docs') }}"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/04.png" style="width: 80px;" alt="Delivery Information">
             <div class="card-body text-center">
               <h3 class="card-title">Dashboard</h3>
               <p class="card-text text-sm">This guide will show you how to use NucleusERP dashboard when running  in your local or remote server.</p><span class="text-sm text-uppercase font-weight-bold">View Topic&nbsp;<i class="fe-icon-arrow-right"></i></span>
             </div></a></div>
-        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="nucleus-erp-apps-docs.php"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/05.png" style="width: 80px;" alt="Refund Policy">
+        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="{{ url('/nucleus-erp-apps-docs') }}"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/05.png" style="width: 80px;" alt="Refund Policy">
             <div class="card-body text-center">
               <h3 class="card-title">Apps</h3>
               <p class="card-text text-sm">This guide will show you how to use Apps in NucleusERP when running  in your local or remote server.</p><span class="text-sm text-uppercase font-weight-bold">View Topic&nbsp;<i class="fe-icon-arrow-right"></i></span>
             </div></a></div>
-        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="nucleus-erp-user-docs.php"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/06.png" style="width: 80px;" alt="Affiliate Program">
+        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="{{ url('/nucleus-erp-user-docs') }}"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/06.png" style="width: 80px;" alt="Affiliate Program">
             <div class="card-body text-center">
               <h3 class="card-title">Users</h3>
               <p class="card-text text-sm">This guide will show you how to manage users in NucleusERP when running  in your local or remote server.</p><span class="text-sm text-uppercase font-weight-bold">View Topic&nbsp;<i class="fe-icon-arrow-right"></i></span>
