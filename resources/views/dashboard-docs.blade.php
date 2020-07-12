@@ -2,7 +2,7 @@
   <!-- Body-->
   <body>
     
-    <!-- Off-Canvas Menu-->
+   <!-- Off-Canvas Menu-->
     <div class="offcanvas-container is-triggered offcanvas-container-reverse" id="mobile-menu"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
       <div class="px-4 pb-4">
         <h6>Menu</h6>
@@ -181,11 +181,10 @@
         </div>
       </div>
     </header>
-
     <!-- Page Title-->
     <div class="page-title d-flex bg-dark" aria-label="Page title" style="background-image: url(img/pages/help-hero-bg.jpg);">
       <div class="container text-left align-self-center">
-        <h1 class="page-title-heading text-white">Nucleus ERP System Apps </h1>
+        <h1 class="page-title-heading text-white">Nucleus ERP System Dashboard </h1>
       </div>
     </div>
     <!-- Page Content-->
@@ -198,7 +197,7 @@
           <!-- Off-Canvas Container--
           <aside class="offcanvas-container" id="help-sidebar">
             <div class="offcanvas-scrollable-area px-4 pt-5 px-lg-0 pt-lg-0"><span class="offcanvas-close"><i class="fe-icon-x"></i></span></div>
-            <nav class="list-group"><a class="list-group-item active" href="#accordion">Environment</a><a class="list-group-item" href="">PHP Extensions</a><a class="list-group-item" href="#">Working With Dashboard</a><a class="list-group-item" href="#">Available Payment Methods</a><a class="list-group-item" href="#">Delivery Information</a><a class="list-group-item" href="#">Order Tracking Instructions</a><a class="list-group-item" href="#">Refund Policy</a><a class="list-group-item" href="#">Offers And Discounts</a><a class="list-group-item" href="#">Reward Points</a><a class="list-group-item" href="#">Affiliate Program</a><a class="list-group-item" href="#">Service Terms &amp; Conditions</a></nav>
+            <!--<nav class="list-group"><a class="list-group-item active" href="#accordion">Environment</a><a class="list-group-item" href="">PHP Extensions</a><a class="list-group-item" href="#">Working With Dashboard</a><a class="list-group-item" href="#">Available Payment Methods</a><a class="list-group-item" href="#">Delivery Information</a><a class="list-group-item" href="#">Order Tracking Instructions</a><a class="list-group-item" href="#">Refund Policy</a><a class="list-group-item" href="#">Offers And Discounts</a><a class="list-group-item" href="#">Reward Points</a><a class="list-group-item" href="#">Affiliate Program</a><a class="list-group-item" href="#">Service Terms &amp; Conditions</a></nav>
           </aside>
         </div>-->
         <!-- Content-->
@@ -206,21 +205,33 @@
           <div class="accordion" id="accordion" role="tablist">
             <div class="card">
               <div class="card-header" role="tab">
-                <h6><a href="#collapseOne" data-toggle="collapse">App Store</a></h6>
+                <h6><a href="#collapseOne" data-toggle="collapse">Dashboard</a></h6>
               </div>
               <div class="collapse show" id="collapseOne" data-parent="#accordion" role="tabpanel">
                 <div class="card-body">
-                    <p>While we strongly believe that NucleusERP is the best free ERP software out there, we're very well aware that it's not perfect, just like everything in the real world. It ships with core accounting tools and ERP tools needed to manage the money. For further features, instead of creating a bloated software by adding all of them to the core, we've created a modular structure so that it could get extended easily.</p>
+                    <p>The dashboard is the first thing you will see when entering NucleusERP. The main function of the dashboard is to give the owner an overview of how the business is performing. Dashboard reports show the accrued incomes and expenses, except Cash Flow chart. Here you can learn more about cash and accrual accounting.</p>  
+                    <p>Totals and charts are displayed under the default currency. Invoices, revenues, bills, and payments created under a different currency will be converted based on the currency rate at the time they were created.</p>        
+                    <li><b>Totals:</b> Sum up the income, expense and profit state of your business. They also show the upcoming (not paid) invoices/bills.</li>
+                    <li><b>Cash Flow:</b> Shows the income, expense and profit in cash per day and/or month.</li>
+                    <li><b>Cash Flow:</b> Shows the income, expense and profit in cash per day and/or month.</li>
+                    <li><b>Incomes By Category:</b> A pie chart to show the distribution of incomes. Invoices are a shown as a category of itself.</li>
+                    <li><b>Expenses By Category:</b> A pie chart to show the distribution of expenses. Bills are a shown as a category of itself.</li>
+                    <li><b>Account Balance:</b> It shows the balance of each account you've added.</li>
+                    <li><b>Latest Incomes:</b> A list that displays the last 5 incomes.</li>
+                    <li><b>Latest Incomes:</b> A list that displays the last 5 incomes.</li>
+                    <li><b>Latest Expenses:</b> A list that displays the last 5 expenses. </li>
+
                 </div>
               </div>
             </div>
             <div class="card">
               <div class="card-header" role="tab">
-                <h6><a class="collapsed" href="#collapseTwo" data-toggle="collapse">Tokens</a></h6>
+                <h6><a class="collapsed" href="#collapseTwo" data-toggle="collapse">Menu</a></h6>
               </div>
               <div class="collapse" id="collapseTwo" data-parent="#accordion" role="tabpanel">
                 <div class="card-body">
-                <p>In order to access the App Store from your Nucleus ERP software installation, and install the apps you've purchased, you will need to create an API token and enter it when you get asked for. That is the bridge between the software and other sites like akaunting.com.
+                <p>In the left side of there is a navigation menu. You can navigate between the <u><b>Items, Incomes, Expenses, Banking, Reports, Settings and Apps</u></b>.    
+
                 </div>
               </div>
             </div>        
@@ -242,5 +253,4 @@
     <script src="{{ url('js/vendor.min.js') }}"></script>
     <script src="{{ url('js/theme.min.js') }}"></script>
   </body>
-
 </html>

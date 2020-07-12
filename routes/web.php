@@ -44,7 +44,7 @@ Route::get('/nucleus-erp-installation-docs', function ()
 
 Route::get('/nucleus-erp-dashboard-docs', function ()
 {
-    return view('dashbaord-docs');
+    return view('dashboard-docs');
 });
 
 Route::get('/nucleus-erp-apps-docs', function ()
@@ -57,3 +57,8 @@ Route::get('/nucleus-erp-user-docs', function ()
     return view('user-docs');
 });
 
+
+Route::get('/nucleus-erp-faqs', function ()
+{
+    return view('faqs');
+});
