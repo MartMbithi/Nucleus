@@ -78,3 +78,7 @@ Route::get('/nucleus-erp-invoices', function ()
     return view('faqs-invoices');
 });
 
+Route::get('/nucleus-erp-community', function ()
+{
+    return view('community');
+});

@@ -1,7 +1,7 @@
 @include('partials._head')
   <!-- Body-->
   <body>
-    
+
     <!-- Off-Canvas Menu-->
     <div class="offcanvas-container is-triggered offcanvas-container-reverse" id="mobile-menu"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
       <div class="px-4 pb-4">
@@ -120,7 +120,7 @@
               
             </li>
             <!-- Knowledge Base-->
-            <li class="nav-item mega-dropdown-toggle active"><a class="nav-link">Knowledge Base</a>
+            <li class="nav-item mega-dropdown-toggle "><a class="nav-link">Knowledge Base</a>
              
                 <div class="dropdown-menu mega-dropdown">
                   <div class="d-flex">
@@ -148,7 +148,7 @@
                 </div> 
               </li>
             <!-- Community-->
-            <li class="nav-item mega-dropdown-toggle"><a class="nav-link" href="{{ url('/nucleus-erp-community') }}">Community</a>
+            <li class="active nav-item mega-dropdown-toggle"><a class="nav-link " href="{{ url('/nucleus-erp-community') }}">Community</a>
             <!-- NucleusForce-->
             <li class="nav-item dropdown-toggle"><a class="nav-link" href="#">NucleusForce</a>
                 <ul class="dropdown-menu">
@@ -179,51 +179,111 @@
         </div>
       </div>
     </header>
-
-    <!-- Page Title-->
-    <div class="page-title d-flex bg-dark" aria-label="Page title" style="background-image: url(img/pages/help-hero-bg.jpg);">
-      <div class="container text-left align-self-center">
-        <h1 class="page-title-heading text-white">Nucleus ERP System Apps </h1>
-      </div>
-    </div>
     <!-- Page Content-->
-    <!-- Main Container-->
-    <section class="container pb-5 mb-2">
-      <div class="row">
-        <!-- Sidebar--
-        <div class="col-xl-3 col-lg-4">
-          <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#help-sidebar" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
-          <!-- Off-Canvas Container--
-          <aside class="offcanvas-container" id="help-sidebar">
-            <div class="offcanvas-scrollable-area px-4 pt-5 px-lg-0 pt-lg-0"><span class="offcanvas-close"><i class="fe-icon-x"></i></span></div>
-            <nav class="list-group"><a class="list-group-item active" href="#accordion">Environment</a><a class="list-group-item" href="">PHP Extensions</a><a class="list-group-item" href="#">Working With Dashboard</a><a class="list-group-item" href="#">Available Payment Methods</a><a class="list-group-item" href="#">Delivery Information</a><a class="list-group-item" href="#">Order Tracking Instructions</a><a class="list-group-item" href="#">Refund Policy</a><a class="list-group-item" href="#">Offers And Discounts</a><a class="list-group-item" href="#">Reward Points</a><a class="list-group-item" href="#">Affiliate Program</a><a class="list-group-item" href="#">Service Terms &amp; Conditions</a></nav>
-          </aside>
-        </div>-->
-        <!-- Content-->
-        <div class="col-xl-9 col-lg-8">
-          <div class="accordion" id="accordion" role="tablist">
-            <div class="card">
-              <div class="card-header" role="tab">
-                <h6><a href="#collapseOne" data-toggle="collapse">User Manager</a></h6>
+    <!-- Hero-->
+    <section class="bg-center bg-no-repeat bg-cover py-5" style="background-image: url(img/pricing-hero-bg.jpg);">
+      <div class="container py-4 py-sm-5">
+        <h1 class="text-center text-white text-shadow pt-3"><span class='d-block h2 text-white'>Have no time to download Nucleus ERP ?</span>We offer solution.</h1>
+        <p class="lead text-center text-white text-shadow pt-2 pb-5">You  <strong>Can </strong>Have A  Demo <strong>FREE</strong>!</p>
+      </div>
+    </section>
+
+    <section class="container pt-sm-2">
+      <p class="text-muted text-center pb-3"><span class='font-weight-medium text-danger'>*</span> <b>email:</b> martdevelopers@nucleuserp.com <b> password:</b> demo </p>
+      <div class="pricing-plans pb-5">
+        <ul class="nav nav-tabs nav-tabs-style-3 pricing-tabs justify-content-center">
+          <li class="nav-item"><a class="nav-link " href="https://martdev.info/nuclei/n/" target="_blank" data-toggle="price" data-period="monthly">Demo</a></li>
+          
+        </ul>
+        
+      </div>
+    </section>
+    <!-- Clients--
+    <section class="py-5 bg-secondary">
+      <div class="container">
+        <h2 class="h3 block-title text-center mt-2 mb-5"><span class='font-weight-normal'>Our </span>clients<small>Well respected people and companies from around the world</small></h2>
+        <div class="row">
+          <div class="col-6 col-md-3"><a class="d-block bg-white box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/01.png" width="165" alt="Partner"></a></div>
+          <div class="col-6 col-md-3"><a class="d-block bg-white box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/02.png" width="165" alt="Partner"></a></div>
+          <div class="col-6 col-md-3"><a class="d-block bg-white box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/03.png" width="165" alt="Partner"></a></div>
+          <div class="col-6 col-md-3"><a class="d-block bg-white box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/04.png" width="165" alt="Partner"></a></div>
+          <div class="col-6 col-md-3"><a class="d-block bg-white box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/07.png" width="165" alt="Partner"></a></div>
+          <div class="col-6 col-md-3"><a class="d-block bg-white box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/05.png" width="165" alt="Partner"></a></div>
+          <div class="col-6 col-md-3"><a class="d-block bg-white box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/08.png" width="165" alt="Partner"></a></div>
+          <div class="col-6 col-md-3"><a class="d-block bg-white box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/09.png" width="165" alt="Partner"></a></div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials--
+    <section class="py-5">
+      <div class="container py-1">
+        <h2 class="h3 block-title text-center mt-2 mb-5"><span class='font-weight-normal'>And here </span>what they say</h2>
+        <div class="owl-carousel testimonials-carousel" data-owl-carousel="{ &quot;nav&quot;: false, &quot;dots&quot;: true, &quot;loop&quot;: true, &quot;margin&quot;: -15, &quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 4000, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;630&quot;:{&quot;items&quot;:2},&quot;991&quot;:{&quot;items&quot;:2},&quot;1200&quot;:{&quot;items&quot;:3}} }">
+          <div class="blockquote testimonial">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar"><img src="img/testimonials/01.jpg" alt="Testimonial Author Avatar"/>
               </div>
-              <div class="collapse show" id="collapseOne" data-parent="#accordion" role="tabpanel">
-                <div class="card-body">
-                <p> Nucleus ships with fine-grained permissions feature. The Users page lets you customize which users can access the admin side of Nucleus, and what pages can be accessed or modified by them.</p>
-                <p>From the user icon at top right, you can access the Users, Roles, and Permissions pages.</p>
-                </p>Permissions page allows you to define the permissions that will be used within the application and assigned to roles.</p>
-                <p>From Roles page, you can create unlimited roles and assign different permissions to each of them.</p>
+              <div class="d-table-cell align-middle pl-2">
+                <div class="blockquote-footer">Barbara Palson
+                  <cite>Graphic Designer</cite>
                 </div>
               </div>
-            </div>
-               
-
+            </footer>
+          </div>
+          <div class="blockquote testimonial">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar"><img src="img/testimonials/02.jpg" alt="Testimonial Author Avatar"/>
+              </div>
+              <div class="d-table-cell align-middle pl-2">
+                <div class="blockquote-footer">Hinata Nakamura
+                  <cite>Financial Director</cite>
+                </div>
+              </div>
+            </footer>
+          </div>
+          <div class="blockquote testimonial">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar"><img src="img/testimonials/03.jpg" alt="Testimonial Author Avatar"/>
+              </div>
+              <div class="d-table-cell align-middle pl-2">
+                <div class="blockquote-footer">Michael Davis
+                  <cite>Co-Founder, CEO</cite>
+                </div>
+              </div>
+            </footer>
+          </div>
+          <div class="blockquote testimonial">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar"><img src="img/testimonials/04.jpg" alt="Testimonial Author Avatar"/>
+              </div>
+              <div class="d-table-cell align-middle pl-2">
+                <div class="blockquote-footer">Sophia Johnson
+                  <cite>Marketing Manager</cite>
+                </div>
+              </div>
+            </footer>
+          </div>
+          <div class="blockquote testimonial">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar"><img src="img/testimonials/05.jpg" alt="Testimonial Author Avatar"/>
+              </div>
+              <div class="d-table-cell align-middle pl-2">
+                <div class="blockquote-footer">Christopher Lee
+                  <cite>Marketing Manager</cite>
+                </div>
+              </div>
+            </footer>
           </div>
         </div>
       </div>
     </section>
-    
-    <!-- Footer-->
-    @include('partials._footer')
+     Footer-->
+     @include('partials._footer')
     <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
     <!-- Backdrop-->
     <div class="site-backdrop"></div>
