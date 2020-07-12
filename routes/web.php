@@ -93,3 +93,9 @@ Route::get('/nucleus-erp-licences', function ()
     return view('license');
 });
 
+
+Route::get('/nucleus-erp-contact', function ()
+{
+    return view('contact');
+});
+
