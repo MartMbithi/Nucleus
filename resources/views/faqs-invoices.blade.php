@@ -1,6 +1,7 @@
 @include('partials._head')
-<!-- Body-->
+  <!-- Body-->
   <body>
+    <!-- Google Tag Manager (noscript)-->
     
     <!-- Off-Canvas Menu-->
     <div class="offcanvas-container is-triggered offcanvas-container-reverse" id="mobile-menu"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
@@ -181,105 +182,59 @@
         </div>
       </div>
     </header>
+    <!-- Page Title-->
+    <div class="page-title d-flex bg-dark" aria-label="Page title" style="background-image: url(img/pages/help-hero-bg.jpg);">
+      <div class="container text-left align-self-center">
+        <h1 class="page-title-heading text-white">NucleusERP Invoices  </h1>
+      </div>
+    </div>
     <!-- Page Content-->
-    <!-- Hero--
-    <section class="bg-no-repeat bg-center bg-cover" style="background-image: url(img/pages/help-hero-bg.jpg);">
-      <div class="container py-5">
-        <div class="row justify-content-center py-5">
-          <div class="col-lg-7 col-md-8 col-sm-11">
-            <div class="wizard">
-              <div class="wizard-body">
-                <h1 class="h3 text-center pb-2">How can we help?</h1>
-                <form class="input-group mb-2" method="get">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text bg-primary text-white"><i class="fe-icon-search"></i></div>
-                  </div>
-                  <input class="form-control" type="text" placeholder="Ask your question...">
-                </form>
-                <p class="text-center m-0 text-sm">Are you new to Nucleus and want to learn how to use it? Or you may be a developer looking for some details about NucleusERP API, stucture or app/module development. Documentation is the right place to go first.</p>
+    <!-- Main Container-->
+    <section class="container pb-5 mb-2">
+      <div class="row">
+        <!-- Sidebar--
+        <div class="col-xl-3 col-lg-4">
+          <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#help-sidebar" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+          <!-- Off-Canvas Container--
+          <aside class="offcanvas-container" id="help-sidebar">
+            <div class="offcanvas-scrollable-area px-4 pt-5 px-lg-0 pt-lg-0"><span class="offcanvas-close"><i class="fe-icon-x"></i></span></div>
+            <!--<nav class="list-group"><a class="list-group-item active" href="#accordion">Environment</a><a class="list-group-item" href="">PHP Extensions</a><a class="list-group-item" href="#">Working With Dashboard</a><a class="list-group-item" href="#">Available Payment Methods</a><a class="list-group-item" href="#">Delivery Information</a><a class="list-group-item" href="#">Order Tracking Instructions</a><a class="list-group-item" href="#">Refund Policy</a><a class="list-group-item" href="#">Offers And Discounts</a><a class="list-group-item" href="#">Reward Points</a><a class="list-group-item" href="#">Affiliate Program</a><a class="list-group-item" href="#">Service Terms &amp; Conditions</a></nav>
+          </aside>
+        </div>-->
+        <!-- Content-->
+        <div class="col-xl-9 col-lg-8">
+          <div class="accordion" id="accordion" role="tablist">
+            <div class="card">
+              <div class="card-header" role="tab">
+                <h6><a href="#collapseOne" data-toggle="collapse">Invoices</a></h6>
+              </div>
+              <div class="collapse show" id="collapseOne" data-parent="#accordion" role="tabpanel">
+                <div class="card-body">
+                <p>Invoice is a document sent to your customer that indicates the items sold by you. It is generally not paid yet. You should use invoices if you work with tax.</p>
+                </div>
               </div>
             </div>
+            
+            <div class="card">
+              <div class="card-header" role="tab">
+                <h6><a class="collapsed" href="#collapseTwo" data-toggle="collapse">Revenues</a></h6>
+              </div>
+              <div class="collapse" id="collapseTwo" data-parent="#accordion" role="tabpanel">
+                <div class="card-body">
+                <p>Revenue is a non-invoicable and paid income. There are no items within the revenues. Tax is not applicable.</p>
+               </div>
+              </div>
+            </div>       
+
           </div>
         </div>
       </div>
     </section>
-    <!-- Topics-->
-    <section class="container pt-5 pb-4 mb-3">
-      <h2 class="h4 block-title mb-4 text-center">Nucleus ERP FAQs</h2>
-      <div class="row pt-2">
-
-        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="{{ url('/nucleus-erp-bill-no') }}"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/02.png" style="width: 80px;" alt="Managing Account">
-            <div class="card-body text-center">
-              <h3 class="card-title">Bill number</h3>
-              <p class="card-text text-sm">Why isn't the bill number auto generated?</p><span class="text-sm text-uppercase font-weight-bold">View answer&nbsp;<i class="fe-icon-arrow-right"></i></span>
-            </div></a></div>
-
-        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="{{ url('/nucleus-erp-bills-payments') }}"><img class="d-block mx-auto mt-4"   src="img/pages/help-icons/01.png" style="width: 80px;" alt="Working with Dashboard">
-            <div class="card-body text-center">
-              <h3 class="card-title">Bills vs Payments</h3>
-              <p class="card-text text-sm">There are two types of expenses within NucleusERP: Bills vs Payments. They are totally different entries and there is no link between.</p><span class="text-sm text-uppercase font-weight-bold">View answer &nbsp;<i class="fe-icon-arrow-right"></i></span>
-            </div></a></div>
-
-        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="{{ url('/nucleus-erp-invoices') }}"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/03.png" style="width: 80px;" alt="Payment Methods">
-            <div class="card-body text-center">
-              <h3 class="card-title">Invoices vs Revenues</h3>
-              <p class="card-text text-sm">There are two types of incomes within NucleusERP: Invoices and Revenues. They are totally different entries and there is no link between.</p><span class="text-sm text-uppercase font-weight-bold">View answer&nbsp;<i class="fe-icon-arrow-right"></i></span>
-            </div></a></div>
-<!--
-        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="nucleus-erp-cash.php"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/04.png" style="width: 80px;" alt="Delivery Information">
-            <div class="card-body text-center">
-              <h3 class="card-title">Accrual vs Cash</h3>
-              <p class="card-text text-sm">NucleusERP performs accounting on an accrual basis. Let's see what does it mean and why it's been choosen:</p><span class="text-sm text-uppercase font-weight-bold">View answer&nbsp;<i class="fe-icon-arrow-right"></i></span>
-            </div></a></div>
-
-        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="nucleus-erp-apps-docs.php"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/05.png" style="width: 80px;" alt="Refund Policy">
-            <div class="card-body text-center">
-              <h3 class="card-title">Apps</h3>
-              <p class="card-text text-sm">This guide will show you how to use Apps in NucleusERP when running  in your local or remote server.</p><span class="text-sm text-uppercase font-weight-bold">View Topic&nbsp;<i class="fe-icon-arrow-right"></i></span>
-            </div></a></div>
-
-        <div class="col-lg-4 col-sm-6 mb-30 pb-2"><a class="card" href="nucleus-erp-user-docs.php"><img class="d-block mx-auto mt-4" src="img/pages/help-icons/06.png" style="width: 80px;" alt="Affiliate Program">
-            <div class="card-body text-center">
-              <h3 class="card-title">Users</h3>
-              <p class="card-text text-sm">This guide will show you how to manage users in NucleusERP when running  in your local or remote server.</p><span class="text-sm text-uppercase font-weight-bold">View Topic&nbsp;<i class="fe-icon-arrow-right"></i></span>
-            </div></a></div>
-
-      </div>-->
-    </section>
-    <!-- FAQ--
-    <section class="container pb-5 mb-1">
-      <h2 class="h4 block-title mb-4 text-center">F.A.Q</h2>
-      <div class="row pt-3">
-        <div class="col-sm-6">
-          <ul class="list-icon text-xl">
-            <li class="border-bottom pb-2"><i class="fe-icon-file-text text-muted"></i><a class="text-lg navi-link" href="help-single-topic.html">How long will delivery take?</a></li>
-            <li class="border-bottom pb-2"><i class="fe-icon-file-text text-muted"></i><a class="text-lg navi-link" href="help-single-topic.html">What payment methods do you accept?</a></li>
-            <li class="border-bottom pb-2"><i class="fe-icon-file-text text-muted"></i><a class="text-lg navi-link" href="help-single-topic.html">Do you ship internationally?</a></li>
-            <li class="border-bottom pb-2"><i class="fe-icon-file-text text-muted"></i><a class="text-lg navi-link" href="help-single-topic.html">Do I need an account to place an order?</a></li>
-            <li class="border-bottom pb-2"><i class="fe-icon-file-text text-muted"></i><a class="text-lg navi-link" href="help-single-topic.html">How can I track my order?</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <ul class="list-icon text-xl">
-            <li class="border-bottom pb-2"><i class="fe-icon-file-text text-muted"></i><a class="text-lg navi-link" href="help-single-topic.html">What are the product refund conditions?</a></li>
-            <li class="border-bottom pb-2"><i class="fe-icon-file-text text-muted"></i><a class="text-lg navi-link" href="help-single-topic.html">Do you have discounts for returning customers?</a></li>
-            <li class="border-bottom pb-2"><i class="fe-icon-file-text text-muted"></i><a class="text-lg navi-link" href="help-single-topic.html">How do your referral program work?</a></li>
-            <li class="border-bottom pb-2"><i class="fe-icon-file-text text-muted"></i><a class="text-lg navi-link" href="help-single-topic.html">Where I can view and download invoices for my orders?</a></li>
-            <li class="border-bottom pb-2"><i class="fe-icon-file-text text-muted"></i><a class="text-lg navi-link" href="help-single-topic.html">Do you provide technical support after the purchase?</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-     Submit Request
-    <section class="container pb-5 mb-3">
-      <div class="alert alert-image-bg text-center py-5 px-4" style="background-image: url(img/pages/help-section-bg.jpg)">
-        <h2 class="h4 block-title mb-4">Haven't found the answer? We can help.</h2>
-        <p class="pb-3">Contact us and we’ll get back to you as soon as possible.</p><a class="btn btn-primary" href="help-submit-request.html">Submit a Request</a>
-      </div>
-    </section> -->
+    
     <!-- Footer-->
     @include('partials._footer')
-    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Back To Top Button-->
+        <a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
     <!-- Backdrop-->
     <div class="site-backdrop"></div>
     <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->

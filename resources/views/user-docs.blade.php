@@ -168,8 +168,6 @@
                   
                 </ul>
               </li>
-            
-            
           </ul>
           <div>
               <ul class="navbar-buttons d-inline-block align-middle">

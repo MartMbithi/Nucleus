@@ -62,3 +62,19 @@ Route::get('/nucleus-erp-faqs', function ()
 {
     return view('faqs');
 });
+
+Route::get('/nucleus-erp-bill-no', function ()
+{
+    return view('faqs-bill-no');
+});
+
+Route::get('/nucleus-erp-bills-payments', function ()
+{
+    return view('faqs-bill-payments');
+});
+
+Route::get('/nucleus-erp-invoices', function ()
+{
+    return view('faqs-invoices');
+});
+
