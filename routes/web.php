@@ -27,6 +27,11 @@ Route::get('/nucleus-erp-docs', function ()
     return view('docs');
 });
 
+Route::get('/nucleus-erp-requirements', function ()
+{
+    return view('requirements-docs');
+});
+
 Route::get('/nucleus-erp-downloads-docs', function ()
 {
     return view('downloads-docs');
