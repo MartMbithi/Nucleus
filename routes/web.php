@@ -27,6 +27,11 @@ Route::get('/nucleus-erp-docs', function ()
     return view('docs');
 });
 
+Route::get('/nucleus-erp-requirements', function ()
+{
+    return view('requirements-docs');
+});
+
 Route::get('/nucleus-erp-downloads-docs', function ()
 {
     return view('downloads-docs');
@@ -39,7 +44,7 @@ Route::get('/nucleus-erp-installation-docs', function ()
 
 Route::get('/nucleus-erp-dashboard-docs', function ()
 {
-    return view('dashbaord-docs');
+    return view('dashboard-docs');
 });
 
 Route::get('/nucleus-erp-apps-docs', function ()
@@ -50,5 +55,47 @@ Route::get('/nucleus-erp-apps-docs', function ()
 Route::get('/nucleus-erp-user-docs', function ()
 {
     return view('user-docs');
+});
+
+
+Route::get('/nucleus-erp-faqs', function ()
+{
+    return view('faqs');
+});
+
+Route::get('/nucleus-erp-bill-no', function ()
+{
+    return view('faqs-bill-no');
+});
+
+Route::get('/nucleus-erp-bills-payments', function ()
+{
+    return view('faqs-bill-payments');
+});
+
+Route::get('/nucleus-erp-invoices', function ()
+{
+    return view('faqs-invoices');
+});
+
+Route::get('/nucleus-erp-community', function ()
+{
+    return view('community');
+});
+
+Route::get('/nucleus-erp-about-us', function ()
+{
+    return view('about');
+});
+
+Route::get('/nucleus-erp-licences', function ()
+{
+    return view('license');
+});
+
+
+Route::get('/nucleus-erp-contact', function ()
+{
+    return view('contact');
 });
 
