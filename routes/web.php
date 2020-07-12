@@ -82,3 +82,14 @@ Route::get('/nucleus-erp-community', function ()
 {
     return view('community');
 });
+
+Route::get('/nucleus-erp-about-us', function ()
+{
+    return view('about');
+});
+
+Route::get('/nucleus-erp-licences', function ()
+{
+    return view('license');
+});
+
