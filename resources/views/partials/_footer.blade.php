@@ -1,25 +1,25 @@
 <footer class="bg-dark pt-5">
     <div class="container pt-3 text-center">
-        <h3 class="font-weight-normal text-white">Still not convinced?</h3>
-        <h2 class="h3 text-white pb-4">Get your own version of Nucleus ERP now .</h2>
-        <a class="btn btn-gradient btn-lg" href="nucleus-erp-login.php" target="_blank">
+        <h3 class="font-weight-normal text-white">{{ __('Still not convinced?')  }}</h3>
+        <h2 class="h3 text-white pb-4">{{ __('Get your own version of Nucleus ERP now.') }}</h2>
+        <a class="btn btn-gradient btn-lg" href="" target="_blank">
             <i class="fe-icon-download"></i>
-            &nbsp;Try Nucleus ERP
+            &nbsp; {{ __('Try Nucleus ERP') }} 
         </a>
         <div class="py-5 mt-3">
             <hr class="hr-light">
         </div>
-        <h6 class="text-white text-center pt-4">Subscribe to Newsletter</h6>
+        <h6 class="text-white text-center pt-4">{{ __('Subscribe to Newsletter') }}</h6>
         <div class="row justify-content-center pb-4 mb-3">
             <div class="col-xl-6 col-lg-7 col-md-9">
                 <form action="nucleus-erp-login.php" method="post"  novalidate>
                     <div class="input-group">
                         <input class="form-control form-control-light-skin" required type="email" name="EMAIL" placeholder="Email address">
                         <div class="input-group-append">
-                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                            <button class="btn btn-primary" type="submit">{{ __('Subscribe') }}</button>
                         </div>
                     </div>
-                    <small class="form-text text-white opacity-50 pt-1 text-center">Enter email to receive a newsletter about updates and new products.</small>
+                    <small class="form-text text-white opacity-50 pt-1 text-center">{{ __('Enter email to receive a newsletter about updates and new products.') }}</small>
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true">
                         <input type="text" name="b_c7103e2c981361a6639545bd5_1194bb7544" tabindex="-1">
@@ -50,9 +50,9 @@
             </div>
             <p class="m-0 text-sm text-white order-1">
             <span class='opacity-60'> 
-                <?php echo date ('Y');?> © All rights reserved. Made with </span> 
-                <i class='d-inline-block align-middle fe-icon-heart text-danger'></i> by  
-                <a href='https://martmbithi.github.io/' class='d-inline-block nav-link text-white opacity-60 p-0' target='_blank'>MartDevelopers X MartGfx
+                <?php echo date ('Y');?> © {{ __('All rights reserved. Made with') }} </span> 
+                <i class='d-inline-block align-middle fe-icon-heart text-danger'></i> {{ __('by') }}  
+                <a href='https://martmbithi.github.io/' class='d-inline-block nav-link text-white opacity-60 p-0' target='_blank'>{{ __('MartDevelopers X MartGfx') }}
                 </a>
             </p>
         </div>
