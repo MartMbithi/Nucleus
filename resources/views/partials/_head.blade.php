@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Nucleus ERP | A Light Weight SaaS ERP.
+    <title>{{ __('Nucleus ERP | A Light Weight SaaS ERP') }}.
     </title>
    <!-- SEO Meta Tags-->
     <meta name="description" content="">
@@ -20,7 +20,6 @@
     <link rel="stylesheet" media="screen" href="{{ url('css/vendor.min.css') }}">
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="{{ url('css/theme.min.css') }}">
-   
     <!-- Modernizr-->
     <script src="{{ url('js/modernizr.min.js') }}"></script>
   </head>
