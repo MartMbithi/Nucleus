@@ -1,14 +1,7 @@
 <footer class="bg-dark pt-5">
     <div class="container pt-3 text-center">
-        <h3 class="font-weight-normal text-white">{{ __('Still not convinced?')  }}</h3>
-        <h2 class="h3 text-white pb-4">{{ __('Get your own version of Nucleus ERP now.') }}</h2>
-        <a class="btn btn-gradient btn-lg" href="" target="_blank">
-            <i class="fe-icon-download"></i>
-            &nbsp; {{ __('Try Nucleus ERP') }} 
-        </a>
-        <div class="py-5 mt-3">
-            <hr class="hr-light">
-        </div>
+        
+
         <h6 class="text-white text-center pt-4">{{ __('Subscribe to Newsletter') }}</h6>
         <div class="row justify-content-center pb-4 mb-3">
             <div class="col-xl-6 col-lg-7 col-md-9">
@@ -57,4 +50,6 @@
             </p>
         </div>
     </div>
+    <a class="scroll-to-top-btn" href="#">
+    <i class="fe-icon-chevron-up"></i></a>
 </footer>
