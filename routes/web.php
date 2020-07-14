@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () 
 {
     //Home web route
-    return view('home');
+    return view('index');
 });
 
 Route::get('/nucleus-erp-features', function ()
@@ -116,4 +116,4 @@ Route::get('/nucleus-erp-contact', function ()
 
 Auth::routes();
 
-Route::get('/dashbaord', 'HomeController@index')->name('dashbaord');
+Route::get('/home', 'HomeController@index')->name('home');
