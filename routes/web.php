@@ -116,4 +116,4 @@ Route::get('/nucleus-erp-contact', function ()
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashbaord', 'HomeController@index')->name('dashbaord');
