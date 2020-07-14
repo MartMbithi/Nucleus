@@ -1,142 +1,81 @@
-<!-- Head-->
-@include('partials._head')
+@extends('layouts.app')
+
+@section('content')
   <!-- Body-->
   <body>
-    <!-- Off-Canvas Menu-->
-    <div class="offcanvas-container is-triggered offcanvas-container-reverse" id="mobile-menu">
-        <span class="offcanvas-close">
-            <i class="fe-icon-x"></i>
-        </span>
-      <div class="px-4 pb-4">
-        <h6>{{ __('Menu') }}</h6>
-      </div>
-      <div class="offcanvas-scrollable-area border-top" style="height:calc(100% - 235px); top: 144px;">
-        <!-- Mobile Menu-->
-        <div class="accordion mobile-menu" id="accordion-menu">
-          <!-- Home-->
-          <div class="card">
-            <div class="card-header"><a class="mobile-menu-link active" href="{{ url('/') }}">{{ __('Home') }}</a></div>
-          </div>
-          <!-- Portfolio-->
-          <div class="card">
-            <div class="card-header"><a class="mobile-menu-link " href="{{ url('/nucleus-erp-features') }}">{{ __('Features') }}</a></div>
-          </div>
-          <!-- Blog-->
-          <div class="card">
-            <div class="card-header"><a class="mobile-menu-link" >{{ __('Knowledge Base') }}</a><a class="collapsed" href="#blog-submenu" data-toggle="collapse"></a></div>
-            <div class="collapse" id="blog-submenu" data-parent="#accordion-menu">
-              <div class="card-body">
-                <ul>
-                  <li class="dropdown-header">{{ __('Documentation') }}</li>
-                  <li class="dropdown-item">
-                    <a href="{{ url('/nucleus-erp-docs') }}">{{ __('Nucleus ERP Docs') }}</a>
-                    </li>
-                  <li class="dropdown-header">{{ __('FAQs') }}</li>
-                  <li class="dropdown-item"><a href="{{ url('/nucleus-erp-docs') }}">{{ __('Nucleus ERP fAQs') }}</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header"><a class="mobile-menu-link" href="{{ url('/nucleus-erp-community') }}">{{ __('Community') }}</a></div>
-          </div>
-          <div class="card">
-            <div class="card-header"><a class="mobile-menu-link" >{{ __('NucleusForce') }}</a><a class="collapsed" href="#account-submenu" data-toggle="collapse"></a></div>
-            <div class="collapse" id="account-submenu" data-parent="#accordion-menu">
-              <div class="card-body">
-                <ul>
-                <li class="dropdown-item"><a href="{{ url('/nucleus-erp-about-us') }}">{{ ('About Us') }}</a></li>
-                  <li class="dropdown-item"><a href="{{ url('/nucleus-erp-licences') }}">{{ ('License') }}</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Pages-->
-          <div class="card">
-            <div class="card-header"><a class="mobile-menu-link" href="#">{{ __('Company') }}</a><a class="collapsed" href="#pages-submenu" data-toggle="collapse"></a></div>
-            <div class="collapse" id="pages-submenu" data-parent="#accordion-menu">
-              <div class="card-body">
-                <ul>
-                    <li class="dropdown-item">
-                        <a href="{{ url('/nucleus-erp-contact') }}">{{ ('Contact') }}</a>
-                    </li>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Components-->
-        </div>
-      </div>
-        <div class="offcanvas-footer px-4 pt-3 pb-2 text-center">
-            <a class="social-btn sb-style-3 sb-twitter" href="#">
-                <i class="socicon-twitter"></i>
-            </a>
-            <a class="social-btn sb-style-3 sb-facebook" href="#">
-                <i class="socicon-facebook"></i>
-            </a>
-            <a class="social-btn sb-style-3 sb-pinterest" href="#">
-                <i class="socicon-pinterest"></i>
-            </a>
-            <a class="social-btn sb-style-3 sb-instagram" href="#">
-                <i class="socicon-instagram"></i>
-            </a>
-        </div>
-    </div>
-    <!-- Navbar: Simple Ghost-->
     @include('partials._nav')
+    <!-- Page Title-->
+    <div class="page-title d-flex" aria-label="Page title" style="background-image: url(img/page-title/shop-pattern.jpg);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url('/')}}">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="{{ route('home')}}">{{ Auth::user()->name }} NucleusERP Account</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading">NucleusERP Demo Version </h1>
+      </div>
+    </div>
     <!-- Page Content-->
-    <!-- Hero-->
-    <section class="bg-dark bg-center-top bg-no-repeat position-relative pt-5 pb-4 pb-md-5" style="background-image: url(img/homepages/theme-presentation/hero-bg-back.jpg);">
-      <div class="img-cover bg-auto d-none d-md-block" style="background-image: url(img/homepages/theme-presentation/hero-bg-front.jpg);"></div>
-      <div class="container bg-content py-5 my-md-5 text-center text-md-left">
-        <div class="pb-md-5 mt-5 mb-md-5">
-          <div class="d-inline-block h6 text-lg bg-white px-3 py-2 mt-md-4">{{ __('NucleusERP') }} </div>
-          <h1 class="display-3 text-white"><span class="d-block break-word">{{ __('LightWeight') }}</span><span class="d-block break-word">{{ __('SaaS') }}</span><span class="d-block break-word">{{ __('ERP') }}</span></h1>
+    <div class="container mb-4">
+      <div class="row">
+        <div class="col-lg-4 pb-5">
+          <!-- Account Sidebar-->
+          <div class="author-card pb-3">
+            <div class="author-card-cover" style="background-image: url(img/cover.jpg);"></div>
+            <div class="author-card-profile">
+              <div class="author-card-avatar"><img src="{{ url('img/akaunting-logo-green.png') }}" alt="{{ Auth::user()->name }}"/>
+              </div>
+              <div class="author-card-details">
+                <h5 class="author-card-name text-lg">{{ Auth::user()->name }}</h5><span class="author-card-position">Joined {{ Auth::user()->created_at }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="wizard">
+            @include('partials._home_nav')
+          </div>
+
+        </div>
+        <!-- Profile Settings-->
+        <div class="col-lg-8 pb-5">
+          <form class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="account-fn">{{ __('Full Name') }}</label>
+                <input class="form-control" type="text" value="{{ Auth::user()->name }}" id="account-fn" value="Daniel" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="account-email">E-mail Address</label>
+                <input class="form-control" value="{{ Auth::user()->email }}" type="email" id="account-email" value="daniel.adams@example.com" disabled>
+              </div>
+            </div>
+            <hr>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="account-pass">New Password</label>
+                <input class="form-control" type="password" id="account-pass">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="account-confirm-pass">Confirm Password</label>
+                <input class="form-control" type="password" id="account-confirm-pass">
+              </div>
+            </div>
+            <div class="col-12">
+              <hr class="mt-2 mb-3">
+              <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <button class="btn btn-primary" type="button" data-toast data-toast-position="topRight" data-toast-type="success" data-toast-icon="fe-icon-check-circle" data-toast-title="Success!" data-toast-message="Your profile updated successfuly.">Update Profile</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
-    <div class="bg-dark" style="height: 250px;"></div>
-    <!-- Theme Details-->
-    <section class="container" style="margin-top: -250px;">
-      <div class="bg-white box-shadow py-5 px-4 px-sm-5">
-        <div class="row">
-          <div class="col-md-6 pb-4 mb-3">
-            <h5><span class='d-inline-block bg-info text-white px-2 py-1'>1 </span>{{ __('The most innovative SaaS ERP system') }}</h5>
-            <p class="text-muted pb-3">{{ __('Flexible and efficient management for your company wherever you are in the world - this is what you gain by installing NucleusERP. Where? Anywhere - on your computer, tablet, or smartphone with access to the Internet.') }}</p>
-            <hr>
-          </div>
-          <div class="col-md-6 pb-4 mb-3">
-            <h5><span class='d-inline-block bg-warning text-white px-2 py-1'>2 </span> {{ __('Flexible UI Components') }}</h5>
-            <p class="text-muted pb-3">{{ __('DRY approach, modular design are the cornerstones of the modern ERP Systems. NucleusERP introduces many components and each has diffrent variations.  This gives you unlimited accounting  possibilities.') }}</p>
-            <hr>
-          </div>
-          <div class="col-md-6 pb-4 mb-3">
-            <h5><span class='d-inline-block bg-accent text-white px-3 py-1'>3</span>{{ __('NucleusERP Is OpenSource') }}</h5>
-            <p class="text-muted pb-3">{{ __('Nucleus ERP is an open source system, so you can download and use it completely for free, which will help to reduce your company costs. In addition, the system remains opensource for unlimited number of users.') }}</p>
-            <hr>
-          </div>
-          <div class="col-md-6 pb-4 mb-3">
-            <h5><span class='d-inline-block bg-accent text-white px-3 py-1'>4</span>{{ __('New possibilities') }}</h5>
-            <p class="text-muted pb-3">{{ __('If you are looking for software that ensures freedom of choice and almost unlimited possibilities, check out what we can offer. With additional modules, managing even a very large company becomes easier and more effective.') }}</p>
-            <hr>
-          </div>         
-        </div>
-      </div>
-    </section>
-   
-    <!-- Footer + CTA-->
-    @include('partials._footer')
-
-    <!-- Back To Top Button-->
-    <a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
-    <!-- Backdrop-->
-
-    <div class="site-backdrop"></div>
-
-    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
-    <script src="{{ url('js/vendor.min.js') }}"></script>
-    <script src="{{ url('js/theme.min.js') }}"></script>
-  </body>
-
-</html>
+    </div>
+    @endsection
+    
