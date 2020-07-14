@@ -9,13 +9,13 @@
       <div class="container text-left align-self-center">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ url('/')}}">Home</a>
+            <li class="breadcrumb-item"><a href="{{ url('/')}}">{{ __('Home') }}</a>
             </li>
-            <li class="breadcrumb-item"><a href="{{ route('home')}}">{{ Auth::user()->name }} NucleusERP Account</a>
+            <li class="breadcrumb-item"><a href="{{ route('home')}}">{{ Auth::user()->name }} {{ __('NucleusERP Account') }}</a>
             </li>
           </ol>
         </nav>
-        <h1 class="page-title-heading">NucleusERP Demo Version </h1>
+        <h1 class="page-title-heading">{{ __('NucleusERP Demo Version') }} </h1>
       </div>
     </div>
     <!-- Page Content-->
@@ -29,7 +29,7 @@
               <div class="author-card-avatar"><img src="{{ url('img/akaunting-logo-green.png') }}" alt="{{ Auth::user()->name }}"/>
               </div>
               <div class="author-card-details">
-                <h5 class="author-card-name text-lg">{{ Auth::user()->name }}</h5><span class="author-card-position">Joined {{ Auth::user()->created_at }}</span>
+                <h5 class="author-card-name text-lg">{{ Auth::user()->name }}</h5><span class="author-card-position">{{ __('Joined') }} {{ Auth::user()->created_at }}</span>
               </div>
             </div>
           </div>
@@ -50,27 +50,27 @@
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label for="account-email">E-mail Address</label>
+                <label for="account-email">{{ __('E-mail Address') }}</label>
                 <input class="form-control" value="{{ Auth::user()->email }}" type="email" id="account-email" value="daniel.adams@example.com" disabled>
               </div>
             </div>
             <hr>
             <div class="col-md-6">
               <div class="form-group">
-                <label for="account-pass">New Password</label>
+                <label for="account-pass">{{ __('New Password') }}</label>
                 <input class="form-control" type="password" id="account-pass">
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label for="account-confirm-pass">Confirm Password</label>
+                <label for="account-confirm-pass">{{ __('Confirm Password') }}</label>
                 <input class="form-control" type="password" id="account-confirm-pass">
               </div>
             </div>
             <div class="col-12">
               <hr class="mt-2 mb-3">
               <div class="d-flex flex-wrap justify-content-between align-items-center">
-                <button class="btn btn-primary" type="button" data-toast data-toast-position="topRight" data-toast-type="success" data-toast-icon="fe-icon-check-circle" data-toast-title="Success!" data-toast-message="Your profile updated successfuly.">Update Profile</button>
+                <button class="btn btn-primary" type="button" data-toast data-toast-position="topRight" data-toast-type="success" data-toast-icon="fe-icon-check-circle" data-toast-title="Success!" data-toast-message="Your profile updated successfuly.">{{ __('Update Profile') }}</button>
               </div>
             </div>
           </form>

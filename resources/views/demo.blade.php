@@ -9,13 +9,13 @@
       <div class="container text-left align-self-center">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ url('/')}}">Home</a>
+            <li class="breadcrumb-item"><a href="{{ url('/')}}">{{ __('Home') }}</a>
             </li>
-            <li class="breadcrumb-item"><a href="{{ route('home')}}">{{ Auth::user()->name }} NucleusERP Account</a>
+            <li class="breadcrumb-item"><a href="{{ route('home')}}">{{ Auth::user()->name }} {{ __('NucleusERP Account') }}</a>
             </li>
           </ol>
         </nav>
-        <h1 class="page-title-heading">NucleusERP Demo Version </h1>
+        <h1 class="page-title-heading"> {{ __('NucleusERP Demo Version') }} </h1>
       </div>
     </div>
     <!-- Page Content-->
@@ -29,7 +29,7 @@
               <div class="author-card-avatar"><img src="{{ url('img/akaunting-logo-green.png') }}" alt="{{ Auth::user()->name }}"/>
               </div>
               <div class="author-card-details">
-                <h5 class="author-card-name text-lg">{{ Auth::user()->name }}</h5><span class="author-card-position">Joined {{ Auth::user()->created_at }}</span>
+                <h5 class="author-card-name text-lg">{{ Auth::user()->name }}</h5><span class="author-card-position">{{ __('Joined') }} {{ Auth::user()->created_at }}</span>
               </div>
             </div>
           </div>
@@ -42,16 +42,16 @@
         <!-- Demo URL AND Token-->
         <div class="col-lg-8 pb-5">
           <div class="table-responsive">
-          <h5>Use The Following Credentials:</h5>
-           <h5>Email: <span class="text-success"> martdevelopers@nucleuserp.com </span> </h5>  
-            <h5>Password: <span class="text-success"> demo </span> </h5>
+          <h5>{{ __('Use The Following Credentials:') }}</h5>
+           <h5>{{ __('Email:') }} <span class="text-success"> martdevelopers@nucleuserp.com </span> </h5>  
+            <h5>{{ __('Password:') }} <span class="text-success"> demo </span> </h5>
             <table class="table table-hover mb-0">
               <thead>
                 <tr>
-                  <th>Product Name</th>
-                  <th>API Token</th>
-                  <th>API Token Status</th>
-                  <th>Demo Link</th>
+                  <th>{{ __('Product Name') }}</th>
+                  <th>{{ __('API Token') }}</th>
+                  <th>{{ __('API Token Status') }}</th>
+                  <th>{{ __('Demo Link') }}</th>
                 </tr>
               </thead>
               <tbody>
@@ -62,7 +62,7 @@
                   <td>
                     <a class="badge badge-primary" href="https://martdev.info/nuclei/n/">
                         <span>
-                            NucleusERP Trial Version
+                            {{ __('NucleusERP Trial Version') }}
                         </span>
                     </a>
                   </td>

@@ -122,6 +122,5 @@ Route::get('/demo', function()
 
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/home/demo', 'HomeController@demo')->name('demo');
