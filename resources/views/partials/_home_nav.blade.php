@@ -5,6 +5,6 @@
     </a>
     <a class="list-group-item" href="{{ url('/demo') }}">
         <i class="fe-icon-map-pin text-muted"></i>
-            NucleusERP Demo API Token
+            Try NucleusERP
     </a>
 </nav>

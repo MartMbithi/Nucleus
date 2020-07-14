@@ -42,24 +42,29 @@
         <!-- Demo URL AND Token-->
         <div class="col-lg-8 pb-5">
           <div class="table-responsive">
+          <h5>Use The Following Credentials:</h5>
+           <h5>Email: <span class="text-success"> martdevelopers@nucleuserp.com </span> </h5>  
+            <h5>Password: <span class="text-success"> demo </span> </h5>
             <table class="table table-hover mb-0">
               <thead>
                 <tr>
                   <th>Product Name</th>
                   <th>API Token</th>
+                  <th>API Token Status</th>
                   <th>Demo Link</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>NucleusERP </td>
-                  <td><span class="badge badge-danger m-0"></span></td>
+                  <td>NucleusERP</td>
+                  <td class="text-danger">8703bb84-590a-4b94-812c-c69fba5de8e6</td>
+                  <td><span class="badge badge-success m-0">Active</span></td>
                   <td>
-                    <span class="badge outline-badge-success">
-                        <a href="">
+                    <a class="badge badge-primary" href="https://martdev.info/nuclei/n/">
+                        <span>
                             NucleusERP Trial Version
-                        </a>
-                    </span>
+                        </span>
+                    </a>
                   </td>
                 </tr>
               </tbody>
