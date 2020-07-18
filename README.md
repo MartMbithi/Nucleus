@@ -108,7 +108,7 @@ balance of your bank accounts active.
 
 The Nucleus is open-sourced software licensed under the MIT license
 ```
-Copyright 2020 MartMbithi>
+Copyright 2020 MartMbithi
 
 Permission is hereby granted, free of charge, to any person obtaining a 
 copy of this software and associated documentation files (the "Software"),
