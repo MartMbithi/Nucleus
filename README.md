@@ -35,33 +35,38 @@ which allows them to quickly solve all errors, improve existing features, and de
 1. 
 Accounting
 
-Completely Free Trial. No setup fees. No hidden charges under free trial. Not a free limited version.
-Free means free
+Completely Free Trial. No setup fees. No hidden charges under free trial.
+Not a free limited version.Free means free
 
 2. 
 Inventory
 
-Enable inventory tracking and manage goods as they come in and go out. Items also speed up invoicing.
+Enable inventory tracking and manage goods as they come in and go out.
+Items also speed up invoicing.
 
 3. 
 Multi-Company
 
-Manage the finances of multiple companies from one admin panel. Assign users to different companies.
+Manage the finances of multiple companies from one admin panel.
+Assign users to different companies.
 
 4. 
 Easy Invoicing
 
-Send professional invoices to clients and start accepting online payments, no commission/transaction fee.
+Send professional invoices to clients and start accepting online payments,
+no commission/transaction fee.
 
 5. 
 Multi-Currency
 
-Send invoices and add expenses in any currency and let the system convert them in your main currency.
+Send invoices and add expenses in any currency and let the system 
+convert them in your main currency.
 
 6. 
 Billable Expenses
 
-Create and manage bills so your finances are always accurate and healthy. Know what and when to pay.
+Create and manage bills so your finances are always accurate and healthy.
+Know what and when to pay.
 
 7.
 Powerful Reporting
@@ -72,7 +77,8 @@ information you need to improve your business.
 8. 
 Client Portal
 
-Share the transactions and invoices with your clients and accept bulk payments, online.
+Share the transactions and invoices with your clients 
+and accept bulk payments, online.
 
 9.
 Customer Management
