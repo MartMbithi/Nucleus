@@ -66,7 +66,8 @@ Create and manage bills so your finances are always accurate and healthy. Know w
 7.
 Powerful Reporting
 
-Get detailed financial reports to help you better visualize all the information you need to improve your business.
+Get detailed financial reports to help you better visualize all the 
+information you need to improve your business.
 
 8. 
 Client Portal
@@ -81,17 +82,20 @@ Create clients and send invoices to them.
 10. 
 Vendor Management
 
-Create vendors so you could assign bills and payments to them and later filter their transactions easily.
+Create vendors so you could assign bills and payments to them 
+and later filter their transactions easily.
 
 11. 
 Online Accounting
 
-See your financials online anytime, anywhere on your Mac, PC, tablet or mobile phone. No limits
+See your financials online anytime, anywhere on your Mac, PC, 
+tablet or mobile phone. No limits
 
 12. 
 Deposits & Transfers
 
-Add deposits to and transfers between accounts and keep the balance of your bank accounts active.
+Add deposits to and transfers between accounts and keep the 
+balance of your bank accounts active.
 
 ```
 
@@ -102,4 +106,13 @@ Add deposits to and transfers between accounts and keep the balance of your bank
 
 ## License
 
-The Nucleus is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Nucleus is open-sourced software licensed under the MIT license
+```
+Copyright <2020> <MartMbithi>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
