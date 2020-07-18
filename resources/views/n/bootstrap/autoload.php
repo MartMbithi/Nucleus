@@ -1,0 +1,35 @@
+<?php
+
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
+
+define('LARAVEL_START', microtime(true));
+
+/*
+|--------------------------------------------------------------------------
+| Register The Composer Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader
+| for our application. We just need to utilize it! We'll require it
+| into the script here so that we do not have to worry about the
+| loading of any our classes "manually". Feels great to relax.
+|
+*/
+
+require __DIR__.'/../vendor/autoload.php';
+
+// Load composer for modules
+foreach (glob(__DIR__ . '/../modules/*') as $folder) {
+    $autoload = $folder . '/vendor/autoload.php';
+
+    if (!is_file($autoload)) {
+        continue;
+    }
+
+    require $autoload;
+}
