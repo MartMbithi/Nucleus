@@ -1,19 +1,20 @@
 <?php
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
 
-/**
-    * @package     MartDevelopers Nucleus ERP
-    * @copyright   2019. All rights reserved.
-    * @license     GNU GPL version 3; see LICENSE.txt
-    * @link        https://martmbithi.github.io, https://martdev.info
-    
-    *|--------------------------------------------------------------------------
-    *| Create The Application
-    *|--------------------------------------------------------------------------
-    *|
-    *| The first thing we will do is create a new Laravel application instance
-    *| which serves as the "glue" for all the components of Laravel, and is
-    *| the IoC container for the system binding all of the various parts.
-    *|
+/*
+  |--------------------------------------------------------------------------
+  | Create The Application
+  |--------------------------------------------------------------------------
+  |
+  | The first thing we will do is create a new Laravel application instance
+  | which serves as the "glue" for all the components of Laravel, and is
+  | the IoC container for the system binding all of the various parts.
+  |
 */
 
 $app = new Illuminate\Foundation\Application(

@@ -1,11 +1,11 @@
 <?php
 
-/**
- * @package     MartDevelopers Nucleus ERP
- * @copyright   2019. All rights reserved.
- * @license     GNU GPL version 3; see LICENSE.txt
- * @link        https://martmbithi.github.io, https://martdev.info
- */
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
 
 return [
 
@@ -19,9 +19,9 @@ return [
 
     'patch'     =>  '0',
 
-    'build'     =>  '',
+    'build'     =>  '0',
 
-    'status'    =>  'Bulding',
+    'status'    =>  'Beta',
 
     'date'      =>  '18-July-2020',
 

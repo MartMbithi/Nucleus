@@ -1,17 +1,14 @@
 <?php
 
-/**
- * @package     MartDevelopers Nucleus ERP
- * @copyright   2019. All rights reserved.
- * @license     GNU GPL version 3; see LICENSE.txt
- * @link        https://martmbithi.github.io, https://martdev.info
- */
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
 
 return [
 
-    /*
-    spec columns
-    */
     'columns' => [
         'alpha' => [
             'rows' => ['name', 'customer_name', 'vendor_name', 'display_name', 'company_name', 'domain', 'email', 'description', 'code', 'type', 'status', 'vendor', 'account', 'bill_status_code', 'invoice_status_code'],
@@ -27,70 +24,35 @@ return [
         ],
     ],
 
-    /*
-    defines icon set to use when sorted data is none above (alpha nor amount nor numeric)
-     */
+    
     'default_icon_set' => 'fa fa-long-arrow-down sort-icon',
 
-    /*
-    icon that shows when generating sortable link while column is not sorted
-     */
+    
     'sortable_icon' => 'fa fa-long-arrow-down sort-icon',
 
-    /*
-    generated icon is clickable non-clickable (default)
-     */
     'clickable_icon' => false,
 
-    /*
-    icon and text separator (any string)
-    in case of 'clickable_icon' => true; separator creates possibility to style icon and anchor-text properly
-     */
+    
     'icon_text_separator' => '&nbsp; ',
 
-    /*
-    suffix class that is appended when ascending order is applied
-     */
     'asc_suffix' => '-asc',
 
-    /*
-    suffix class that is appended when descending order is applied
-     */
+    
     'desc_suffix' => '-desc',
 
-    /*
-    default anchor class, if value is null none is added
-     */
     'anchor_class' => null,
 
-    /*
-    relation - column separator ex: detail.phone_number means relation "detail" and column "phone_number"
-     */
+   
     'uri_relation_column_separator' => '.',
 
-    /*
-    formatting function applied to name of column, use null to turn formatting off
-     */
+    
     'formatting_function' => 'ucfirst',
 
-    /*
-    inject title parameter in query strings, use null to turn injection off
-    example: 'inject_title' => 't' will result in ..user/?t="formatted title of sorted column"
-     */
     'inject_title_as' => null,
 
-    /*
-    allow request modification, when default sorting is set but is not in URI (first load)
-     */
     'allow_request_modification' => true,
 
-    /*
-    default order for: $user->sortable('id') usage
-     */
     'default_direction' => 'asc',
 
-    /*
-    default order for non-sorted columns
-     */
     'default_direction_unsorted' => 'asc'
 ];

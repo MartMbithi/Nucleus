@@ -1,11 +1,11 @@
 <?php
 
-/**
- * @package     MartDevelopers Nucleus ERP
- * @copyright   2019. All rights reserved.
- * @license     GNU GPL version 3; see LICENSE.txt
- * @link        https://martmbithi.github.io, https://martdev.info
- */
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
 
 return [
 
@@ -56,7 +56,7 @@ return [
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => env('DB_PREFIX', 'NucleusERP__'),
+            'prefix' => env('DB_PREFIX', 'NucleusERP_'),
             'strict' => true,
             'engine' => null,
             'modes' => [
@@ -77,7 +77,7 @@ return [
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
-            'prefix' => env('DB_PREFIX', 'NucleusERP__'),
+            'prefix' => env('DB_PREFIX', 'NucleusERP_'),
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],

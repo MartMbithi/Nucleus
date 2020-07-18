@@ -1,14 +1,15 @@
 <?php
 
-/**
- * @package     MartDevelopers Nucleus ERP
- * @copyright   2019. All rights reserved.
- * @license     GNU GPL version 3; see LICENSE.txt
- * @link        https://martmbithi.github.io, https://martdev.info
- *  Used Akaunting locale package
- * 
- * 
- */
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
+
+/*
+* Credits to      :   Akaunting
+*/
 
 return [
 
@@ -149,7 +150,7 @@ return [
     */
 
     'all' => [
-        //Fuck i dont have any what im doing here but its working ❕ 
+        //Fuck i dont have any idea what im doing here but its working ❕ 
         ['short' => 'ar',       'long' => 'ar-SA',      'english' => 'Arabic',              'native' => 'العربية'],
         ['short' => 'bg',       'long' => 'bg-BG',      'english' => 'Bulgarian',           'native' => 'български'],
         ['short' => 'bn',       'long' => 'bn-BD',      'english' => 'Bengali',             'native' => 'বাংলা'],

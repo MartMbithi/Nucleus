@@ -1,11 +1,11 @@
 <?php
 
-/**
- * @package     MartDevelopers Nucleus ERP
- * @copyright   2019. All rights reserved.
- * @license     GNU GPL version 3; see LICENSE.txt
- * @link        https://martmbithi.github.io, https://martdev.info
- */
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
 
 // Define minimum supported PHP version
 define('NucleusERP_PHP', '5.6.4');
