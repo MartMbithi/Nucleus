@@ -1,6 +1,13 @@
 <?php
 
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
 Route::group([
+    //Use customer middleware
     'middleware' => 'customer',
     'prefix' => 'customers',
     'namespace' => 'Modules\PaypalStandard\Http\Controllers'

@@ -1,5 +1,12 @@
 <?php
 
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
+
 namespace Modules\PaypalStandard\Http\Controllers;
 
 use App\Events\InvoicePaid;

@@ -1,7 +1,13 @@
 <?php
 
-namespace Modules\PaypalStandard\Providers;
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
 
+namespace Modules\PaypalStandard\Providers;
 use App\Events\PaymentGatewayListing;
 use Illuminate\Support\ServiceProvider;
 use Modules\PaypalStandard\Listeners\Gateway;
