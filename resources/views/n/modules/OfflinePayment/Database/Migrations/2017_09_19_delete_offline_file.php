@@ -1,12 +1,19 @@
 <?php
 
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
+
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\Schema;
 
 class OfflineFile extends Migration
 {
     /**
-     * Run the migrations.
+     *  Crank up migration
      *
      * @return void
      */
@@ -34,9 +41,6 @@ class OfflineFile extends Migration
                     );
                 }
 
-                //$company_id = $this->command->argument('company');
-
-                // Set the active company settings
                 setting()->setExtraColumns(['company_id' => 1]);
 
                 setting()->set('offlinepayment.methods', json_encode($offlinepayment));

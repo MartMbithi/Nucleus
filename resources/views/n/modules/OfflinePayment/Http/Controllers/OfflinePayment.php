@@ -1,11 +1,15 @@
 <?php
 
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
+
 namespace Modules\OfflinePayment\Http\Controllers;
-
 use App\Events\InvoicePaid;
-
 use Illuminate\Routing\Controller;
-
 use Illuminate\Http\Request;
 use App\Http\Requests\Customer\InvoicePayment as PaymentRequest;
 use App\Http\Requests\Customer\InvoiceConfirm as ConfirmRequest;

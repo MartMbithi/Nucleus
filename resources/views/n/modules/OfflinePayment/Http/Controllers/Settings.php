@@ -1,9 +1,14 @@
 <?php
 
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
+
 namespace Modules\OfflinePayment\Http\Controllers;
-
 use Artisan;
-
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Modules\OfflinePayment\Http\Requests\Setting as Request;

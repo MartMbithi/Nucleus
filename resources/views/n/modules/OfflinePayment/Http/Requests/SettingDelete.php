@@ -1,8 +1,15 @@
 <?php
 
-namespace Modules\OfflinePayment\Http\Requests;
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
 
+namespace Modules\OfflinePayment\Http\Requests;
 use App\Http\Requests\Request;
+
 
 class SettingDelete extends Request
 {

@@ -1,7 +1,15 @@
 <?php
 
-namespace Modules\OfflinePayment\Providers;
 
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
+
+
+namespace Modules\OfflinePayment\Providers;
 use App\Events\AdminMenuCreated;
 use App\Events\PaymentGatewayListing;
 use Illuminate\Support\ServiceProvider;
@@ -37,7 +45,7 @@ class OfflinePaymentServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        //oh bwoy
     }
 
     /**

@@ -1,7 +1,12 @@
 <?php
 
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
 namespace Modules\OfflinePayment\Database\Seeders;
-
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
