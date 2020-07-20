@@ -1,3 +1,14 @@
+/*
+----------------------------------------------------------------
+
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+
+-----------------------------------------------------------------
+*/
+
 body {
     margin: 0 10px;
     padding: 0;
@@ -15,7 +26,7 @@ th, td {
 }
 
 .row {
-    font-size: 0; /* prevent whitespace from stuffing up inline-block column layouts */
+    font-size: 0;
 }
 
 .col-58 {
