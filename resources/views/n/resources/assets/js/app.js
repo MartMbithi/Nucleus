@@ -1,3 +1,10 @@
+/*
+* Product         :   Nucleus ERP
+* License         :   MIT license
+* Where To Find Us:   https://martdev.info
+* Email Us        :   martdevelopers254@gmail.com
+*/
+
 
 /**
  * First we will load all of this project's JavaScript dependencies which
